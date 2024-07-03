@@ -13,13 +13,13 @@ class Matriz:
         self.colunas = colunas
 
     def __getitem__(self, posicao):
-        # Permite o acesso a elementos via índices, e.g., matriz[i, j].
+        # Permite o acesso a elementos via índices, matriz[i, j].
 
         i, j = posicao
         return self.data[i][j]
 
     def __setitem__(self, posicao, valor):
-        # Permite a definição de valores via índices, e.g., matriz[i, j] = valor.
+        # Permite a definição de valores via índices, matriz[i, j] = valor.
 
         i, j = posicao
         self.data[i][j] = valor
